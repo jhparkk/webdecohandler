@@ -44,7 +44,7 @@ func TestDecorator(t *testing.T) {
 	r := bufio.NewReader(buf)
 	line, _, err := r.ReadLine()
 	assert.NoError(err)
-	assert.Contains(string(line), "[LOGGER1] Start")
+	assert.Contains(string(line), "[LOGGER2] Start")
 }
 
 func TestDecoratorSTDOUT(t *testing.T) {
